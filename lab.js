@@ -4,7 +4,7 @@
   Check to see if 'lovesCode' is equal to true or false. 
   If it is true, console log "I love to code!"
   If it is not, console log "Coding has its challenges."
-//here
+*/
 var lovesCode = true
 
 if (lovesCode !== true){
@@ -32,12 +32,12 @@ if (amysAge > brittanisAge){
 
 ////////// PROBLEM 3 //////////
 
-//here
+/*
   Using an if statement and a comparison operator, 
   create code that will check if Amy and Brittani were born in the same year. 
   If they were, console.log 'Amy & Brittani were born in the same year'. 
   If they were not, console.log 'Amy & Brittani were not born in the same year'
-//here
+*/
 if(amysBirthYear === brittanisBirthYear){
   console.log("Brittani and Amy were born in the same year")
 } else{
@@ -47,8 +47,6 @@ if(amysBirthYear === brittanisBirthYear){
 
 
 ////////// PROBLEM 4 //////////
-
-
 
 /*
   Using an if statement and a comparison operator, 
@@ -61,27 +59,32 @@ if(amysBirthYear === brittanisBirthYear){
   one should wear a jacket and carry an umbrella.
   Come up with your own clothing suggestions based on those 
   temperature parameters when it is not raining.
-//here
+*/  
 let temperature = 55
 let rain = true
 
 if (temperature >= 80 && rain){
   console.log("One should wear a t-shirt and take an umbrella")
-} 
-if (temperature < 80 && temperature > 60 && rain){
+} else if(temperature >= 80 && !rain){
+  console.log("One should only wear a t shirt")
+}
+  else if (temperature < 80 && temperature > 60 && rain){
   console.log("One should wear a rain-jacket")
+} else if (temperature < 80 && temperature > 60 && !rain){
+  console.log("One should wear a puffy jacket")
 }
-else if (temperature <= 60){
+else if (temperature <= 60 && rain){
   console.log("One should wear a jacket and carry an umbrella")
+} else {
+  console.log("One should wear an extra puffy jacket")
 }
-
 
 ////////// PROBLEM 5 //////////
 
 /*
   Create a for-loop that runs 10 times, and on each iteration 
   logs the word 'hello'.
-//here
+*/
 for(i = 0; i < 10; i++){
   console.log("Hello")
 }
@@ -95,7 +98,7 @@ for(i = 0; i < 10; i++){
   logging the numbers 1 through 10. 
   Ex, on the first iteration it would log 1, on the second iteration
    it would log 2.
-//here
+*/
 let iteration = 1;
 for(i =0; i < 10; i++){
   iteration = (i + 1)
@@ -103,7 +106,7 @@ for(i =0; i < 10; i++){
 }
 
 ////////// PROBLEM 8 //////////
-
+/*
   Create a while-loop that logs "Your score is not high enough"
    while the score variable above is below passingScore. 
    In each iteration of the loop, increase the score by one. 
@@ -149,17 +152,15 @@ console.log(changeMyMind)
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
-
-
 // Create a while loop that continues to run while z is greater than 0. 
 //Within the while loop, log a countdown from the value of z to 1.
 // Once you have logged the countdown, make sure you decrement z by 1.
 // If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 let z = 5
 while(z > 0){
-for(i = z; i > 0; i--){
+  for(i = z; i > 0; i--){
   console.log(i)
-}
-z--;
-}
+  }
+  z--;
+  }
 
