@@ -101,6 +101,9 @@ for(i =0; i < 10; i++){
   iteration = (i + 1)
   console.log(iteration)
 }
+
+//comments
+
 //CODE HERE
 /*
 let score = 0
